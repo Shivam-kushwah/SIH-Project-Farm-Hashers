@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Lovable project
 
 ## Project info
@@ -71,3 +72,7 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+=======
+# SIH-Project-Farm-Hashers
+Track your agricultural produce from farm to consumer with blockchain-verified authenticity
+>>>>>>> b8d0d399b07bfa329b48d94ee231671b5477381c
