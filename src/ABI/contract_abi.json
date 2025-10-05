@@ -1,0 +1,372 @@
+  [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Farmer_batches",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "batch_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "crop_name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expected_p_kg_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sold_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "is_sold",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "farm_city_location",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_batch_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_crop_name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_quantity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_expected_p_kg_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_farm_city_location",
+          "type": "string"
+        }
+      ],
+      "name": "create_batch",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "farmer_name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "farmer_profile_name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get_all_batches",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "batch_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "crop_name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "quantity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expected_p_kg_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "sold_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "is_sold",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "farm_city_location",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Farmer.batch[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_batch_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "get_batch_details",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "batch_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "crop_name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "quantity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expected_p_kg_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "sold_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "is_sold",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "farm_city_location",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Farmer.batch",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get_farmer_profile_name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get_num_of_batches",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get_user_role",
+      "outputs": [
+        {
+          "internalType": "enum Farmer.Role",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "isUserRoleAssigned",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "is_role_assigned",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_farmer_profile_name",
+          "type": "string"
+        }
+      ],
+      "name": "set_farmer_profile_name",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum Farmer.Role",
+          "name": "_role",
+          "type": "uint8"
+        }
+      ],
+      "name": "set_user_role",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "batch_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "new_sold_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "status_is_sold",
+          "type": "bool"
+        }
+      ],
+      "name": "update_batch",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "user_role",
+      "outputs": [
+        {
+          "internalType": "enum Farmer.Role",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+]
