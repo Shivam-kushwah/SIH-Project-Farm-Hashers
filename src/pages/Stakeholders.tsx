@@ -68,7 +68,7 @@ const Stakeholders = () => {
         {
           id: "1",
           type: "farmer",
-          name: "Peterson Organic Farm",
+          name: "jhatu Organic Farm",
           contactName: "John Peterson",
           email: "john@petersonorganic.com",
           phone: "+1 (555) 123-4567",
