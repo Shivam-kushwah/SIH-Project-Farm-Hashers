@@ -85,9 +85,7 @@ const FarmerDashboard = () => {
   }, []);
   const contract = useContract();
 
-  console.log(contract)
-  async function setname(){await contract.set_farmer_profile_name("ankushhh");}
-  setname();
+ 
 
   const saveProfile = () => {
     localStorage.setItem('farmer-profile', JSON.stringify(profile));
@@ -128,7 +126,7 @@ const FarmerDashboard = () => {
     // For now, we just save it locally
     console.log(contract.target)
    contract.create_batch(1,"wheat",1000,200,"agra");
-   
+   console.log(contract.get_all_batches());
     
     ;
 
