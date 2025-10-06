@@ -31,7 +31,7 @@ export const ContractProvider: React.FC<{ children: ReactNode }> = ({
         const provider = new ethers.BrowserProvider((window as any).ethereum);
         const signer = await provider.getSigner();
 
-        const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // update with your deployed contract address
+        const contractAddress = "0x0c8dbBCCE42b826d2Af884fFE869D5A30784170f"; // update with your deployed contract address
         const instance = new ethers.Contract(contractAddress, contractABI, signer);
 
         setContract(instance);
